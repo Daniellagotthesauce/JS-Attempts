@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reg</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="../css/Registration.css">
     
 </head>
 <body>
+    <div class="Register">
+        <div class="Bigback">
+            <img src="../photos/Ilhan1.jpg" alt="Bigback">
+        </div>
+
+        <div class="registration-form">
+            <h2>Registration</h2>
+            <form action="http://localhost:4000/register" method="post">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fname" name="FullName" placeholder="John Doe">
+
+                    <label for="uname">UserName</label>
+                    <input type="text" id="uname" name="UserName">
+
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="Email" placeholder="username@mail.com">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="Password">
+
+                    <label for="confirm password">Confirm Password</label>
+                    <input type="password" id="confirm password" name="pass_confirmation">
+
+                    <label for="contact">Contact</label>
+                    <input type="tel" id="contact" name="Contact">
+
+
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>  
 </body>
